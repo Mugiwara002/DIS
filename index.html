@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Center</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sidebar {
+      background-color: #00a0c6;
+      color: white;
+      min-height: 100vh;
+    }
+
+    .sidebar img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .sidebar ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .chat-button {
+      background-color: #00a0c6;
+      color: white;
+      text-decoration: none;
+    }
+
+    .rating {
+      color: orange;
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Toggle Button -->
+      <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Sidebar -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 sidebar d-md-block collapse bg-primary p-3">
+        <div class="text-center">
+          <img src="rpk.jpg" alt="Profile Image" class="mb-3">
+          <h3>Bagas Rafikansa</h3>
+        </div>
+        <ul>
+          <li><a href="#" class="text-white text-decoration-none">BERANDA</a></li>
+          <li><a href="daftarobat.html" class="text-white text-decoration-none">TOKO</a></li>
+          <li><a href="chat.html" class="text-white text-decoration-none">CHAT</a></li>
+          <li><a href="payment1.html" class="text-white text-decoration-none">PEMBAYARAN</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom py-3 mb-4">
+          <div>
+            <h2>Medical Center</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <input type="text" class="form-control w-auto" placeholder="Search a Doctor...">
+        </div>
+
+        <!-- Doctor Cards -->
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card p-3 d-flex flex-row align-items-center">
+              <img src="novy.jpg" alt="Doctor Novy">
+              <div class="ms-3">
+                <h4>Dr. Novy</h4>
+                <small>Status: Offline</small>
+                <a href="#" class="btn chat-button mt-2">Chat</a>
+              </div>
+              <div class="rating ms-auto">⭐ 5.0</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card p-3 d-flex flex-row align-items-center">
+              <img src="noor.jpg" alt="Doctor Novy">
+              <div class="ms-3">
+                <h4>Dr. Noor</h4>
+                <small>Status: Offline</small>
+                <a href="#" class="btn chat-button mt-2">Chat</a>
+              </div>
+              <div class="rating ms-auto">⭐ 5.0</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card p-3 d-flex flex-row align-items-center">
+              <img src="surep.jpg" alt="Doctor Novy">
+              <div class="ms-3">
+                <h4>Dr. Surep</h4>
+                <small>Status: Offline</small>
+                <a href="#" class="btn chat-button mt-2">Chat</a>
+              </div>
+              <div class="rating ms-auto">⭐ 5.0</div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card p-3 d-flex flex-row align-items-center">
+              <img src="dokter alpin.jpg" alt="Doctor Alpin">
+              <div class="ms-3">
+                <h4>Dr. Alpin</h4>
+                <small>Status: Online</small>
+                <a href="chat.html" class="btn chat-button mt-2">Chat</a>
+              </div>
+              <div class="rating ms-auto">⭐ 5.0</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

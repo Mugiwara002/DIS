@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Payment Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for image responsiveness */
+        .payment-card img {
+           
+            margin: 0 auto; /* Centers the image */
+            display: block; /* Keeps the image block-level for centering */
+        }
+
+        .btn-lg {
+            width: 100%; /* Full width button on smaller screens */
+        }
+
+        /* Optional: Padding adjustments for small screens */
+        @media (max-width: 576px) {
+            .card {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Title -->
+        <h2 class="text-center mb-4">Payment</h2>
+
+        <!-- Payment Options -->
+        <div class="row">
+            <!-- Credit Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card text-center payment-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">MANDIRI</h5>
+                        <a href="payment2.html"><img src="th.jpeg" alt="Mastercard logo" class="img-fluid"></a>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- PayPal -->
+            <div class="col-md-6 mb-4">
+                <div class="card text-center payment-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">BCA</h5>
+                        <a href="payment2.html"><img src="th (1).png" alt="Mastercard logo" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pay Now Button -->
+        <div class="row">
+            <div class="col-md-12">
+                <a href= "payment2.html" button class="btn btn-primary btn-lg">Pay Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
